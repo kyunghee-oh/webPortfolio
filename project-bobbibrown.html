@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>Project-Bobbibrown</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/sub.css">
+    
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- 웹폰트 -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+    <!-- javascript Libraries -->
+    <script src="js/jquery.min_1.12.4.js"></script>
+    <script src="js/modernizr-custom.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- html5shiv IE6~8 -->
+    <!-- [if li IE9] >
+        <script src="js/html5shiv.min.js"></script>
+    <! [endif] -->
+
+  </head>
+  <body>
+    <ul class="skip-nav">
+      <li><a href="#gnb">주메뉴</a></li>
+      <li><a href="#main">메인메뉴</a></li>
+    </ul>
+    <div class="wrapper">
+      <header id="header">
+        <div class="container">
+          <h1 class="logo">
+            <a href="index.html"><img src="images/common/oh-logo.png" alt="로고이미지"><span class="hidden">oh kyunghee logo</span></a>
+          </h1>
+          <nav class="gnb">
+            <ul class="gnb_menu">
+              <li><a href="portfolio-project-list.html" class="pf_color">Portfolio</a></li>
+              <li><a href="about.html">About</a></li>
+            </ul>
+          </nav>
+          <!-- //PC nav -->
+          <button id="nav-mbtn" class="nav-mbtn">
+            <span class="btn_line"></span>
+            <span class="btn_line"></span>
+            <span class="btn_line"></span>
+          </button>
+          <nav class="m-gnb">
+            <div class="m-gnb-header">
+              <div class="m-close-btn-box">
+                <button type="button" class="close-btn" name="button">닫기</button>
+              </div>
+            </div>
+            <ul class="m-gnb-menu">
+              <li><a href="portfolio-project-list.html">portfolio</a></li>
+              <li><a href="about.html">about</a></li>
+            </ul>
+          </nav>
+          <!-- //모바일 nav -->
+        </div>
+      </header>
+      <!-- //header -->
+      <main id="main">
+        <section class="content1-project-intro">
+          <div class="container">
+            <div class="detail-tit">
+              <h2>바비브라운</h2>
+              <p>
+                화장품 브랜드 ‘바비브라운’ 사이트를 <span>반응형으로 리뉴얼</span> 하였습니다.<br>
+                다양한 사용자 환경에 대응하기 위해 크로스 브라우징과 웹접근성을 고려하였으며, 전체적인 <span>퍼블리싱과</span> 서브 페이지 디자인을 진행하였습니다.
+              </p>
+            </div>
+            <div class="detail-mockup-img">
+              <img src="images/sub/project_01/bobbi_mainBnner.jpg" alt="목업이미지">
+            </div>
+            <div class="detail-info">
+              <h3>바비브라운<br>
+                <span>반응형 / 웹표준 / 웹접근성 / 크로스브라우징</span>
+              </h3>
+              <ul class="sub-tit">
+                <li><strong>제작기간</strong> 2019.02 ~ 2019.05</li>
+                <li><strong>프로젝트</strong> 개인 리뉴얼 프로젝트</li>
+                <li>
+                  <strong>역할</strong><span> 코딩 기여도100%</span> / 디자인 기여도 50%
+                </li>
+                <li>
+                  <strong>사용기술</strong>Html5 / Css3 / Javascript / Jquery
+                </li>
+                <li>
+                  <strong>IE 지원</strong>IE9+
+                </li>
+              </ul>
+              <a href="http://rudgml2141.dothome.co.kr/w/" target="_blank">사이트 보러가기</a>
+            </div>
+          </div>
+        </section>
+        <!-- //content1-project-wrap -->
+        <section class="content2-project-solution">
+          <div class="container">
+            <div class="detail-asis-tobe">
+              <h3>As Is & To Be<br>
+                <span>문제발견과 문제해결</span>
+              </h3>
+              <div class="asis">
+                <span>기존 사이트</span>
+                <img src="images/sub/project_01/as-is.png" alt="문제발견 화면 이미지">
+                <div class="txt">
+                  <p><strong>As Is</strong></p>
+                  <p>
+                    1. 로그인<br>
+                    - 로그인을 시도하고 실패했을 경우, 사용자 이탈이 생길 수 있다.<br>
+                    - 시각적으로 콘텐츠 정렬이나 여백 등의 정돈되지 않은 UI.
+                  </p>
+                  <p>
+                    2. 메이크업 레슨(How To)<br>
+                    - 메이크업 과정을 보여주기보다는 완성된 이미지와 제품 이미지, 그리고 간략한 설명만 명시되어 있어 전달이 부족하다.<br>
+                    - 카테고리가 분리되어 있어 같은 콘텐츠인데도 중복적으로 클릭할 수 있다.
+                  </p>
+                  <p>
+                    이메일 주소로 가입해 로그인 하는 시스템은 이탈 페이지 비율에 많은 영향을 준다.<br>
+                    이 내용은 로그인 UX 가이드에서도 볼 수 있는데, 사용자는 양식 작성이나 엄격한 규칙이 필요한 암호를 통해 새 사이트에 가입하는 것을 좋아하지 않다고 한다. 등록하는 과정에서 암호를 잊어버리면 로그인 실패가 생기는데 이것은 결국 사이트 이탈로 이어진다.<br>
+                    메이크업 레슨의 카테고리는 전체 보기와 각 레슨별로 리스트가 분리되어있어 같은 내용인지 인식하지 못해 모든 리스트를 사용자가 클릭할 수 있다. 정보 분리가 되어 있어 사용성에 불편함이 생긴다고 판단하였다.
+                  </p>
+                </div>
+              </div>
+              <!-- //as is -->
+              <div class="tobe">
+                <span>신규구축 사이트</span>
+                <img src="images/sub/project_01/to-be.jpg" alt="문제해결 화면 이미지">
+                <div class="txt">
+                  <p><strong>To Be</strong></p>
+                  <p>
+                    1. 로그인<br>
+                    - 간편 로그인 시스템 도입으로 대체 등록 방법을 추가하였다.
+                  </p>
+                  <p>
+                    2. 메이크업 레슨(How To)<br>
+                    - 이해도를 높이고 따라 하기 쉽도록 동영상 콘텐츠를 추가 제공하였다.<br>
+                    - 카테고리 정보를 그룹핑시켜 사용성을 높였다.
+                  </p>
+                  <p>
+                    전체 상품을 노출하지 않고 각 상품의 스몰 배너를 노출해 깔끔하고 정돈된 UI를 의도하였으며, 인기 아이템 콘텐츠로 주문 선택에 도움을 주었다.<br>정확한 사이트의 정보를 제공해 자사 몰 신뢰도를 높이고 불편함을 해소하였으며, 평소 사은품을 따로 구매하기 원하는 사용자를 위해 사은품 판매 카테고리를 제공하였다.<br>
+                    회원가입 페이지로 인해 다양한 혜택을 받도록 했고, 가입하지 않고도 간편하게 주문할 수 있는 비회원 주문 시스템을 도입하였다.
+                  </p>
+                </div>
+              </div>
+              <!-- //tobe -->
+            </div>
+          </div>
+        </section>
+        <!-- //content2-project-solution -->
+        <section class="content3-project-concept">
+          <div class="container">
+            <div class="detail-concept">
+              <h3>Project Concept<br>
+                <span>프로젝트 컨셉 : 목표 / 사용 기술</span>
+              </h3>
+              <div class="border-img">
+                <img src="images/sub/project_01/border-line-arrow.png" class="img-pc" alt="컨셉라인이미지">
+                <img src="images/sub/project_01/border-line-arrow_m.png" class="img-m" alt="컨셉라인이미지">
+                <p>
+                  리뉴얼 전과 다른 새로운 구조 설계를 목표로 했으며, 코딩 전 구조분석과 설계를 하였습니다. 웹표준과 접근성, 그리고 SEO를 고려해 튼튼한 코드의 반응형 사이트를 구축하였습니다.
+                </p>
+              </div>
+              <!-- //border-img -->
+              <div class="skill">
+                <p><strong>Skill Sheet</strong></p>
+                <ul class="sheet-list">
+                  <li># Html5 - 시맨틱</li>
+                  <li># Css2, Css3 - transform, transition 시각적 효과 추가</li>
+                  <li># Javascript</li>
+                  <li># Jaquery</li>
+                  <li># 반응형 레이아웃</li>
+                  <li># 서브페이지 디자인</li>
+                </ul>
+              </div>
+              <!-- //skill -->
+            </div>
+          </div>
+        </section>
+        <!-- //content3-project-concept -->
+        <section class="content4-project-planing">
+          <div class="container">
+            <div class="detail-sketch">
+              <h3>Sketch<br>
+                <span>스케치</span>
+              </h3>
+              <img src="images/sub/project_01/sketch.jpg" alt="스케치 이미지">
+            </div>
+            <div class="detail-wireframe">
+              <h3>Wireframe<br>
+                <span>와이어프레임</span>
+              </h3>
+              <img src="images/sub/project_01/wireframe_re.jpg" alt="와이어프레임 이미지">
+            </div>
+          </div>
+        </section>
+        <!-- //content4-project-planing -->
+        <section class="content5-project-veiw-bobbi">
+          <div class="container">
+            <div class="detail-output">
+              <h3>Out Put<br>
+                <span>이미지아웃풋</span>
+              </h3>
+              <div class="main-veiw">
+                <p><strong>Main</strong></p>
+                <p>
+                  Outline 검사로 구조를 파악하고 접근성을 위해 키보드 사용 보장과 자동 슬라이드 이미지를 제어할 수 있는 정지기능을 제공하였다. 또한, 시각적 효과를 주기 위해 마우스 오버 시 제품 확대 기능을 추가하였다.
+                </p>
+                <img src="images/sub/project_01/output-main_bobbiPc.jpg" alt="아웃풋 메인페이지 pc 이미지">
+                <span>Tablet / Mobile : 1024 ~ 320</span>
+                <img src="images/sub/project_01/output-main_bobbiM.jpg" class="tablet-m-img" alt="아웃풋 메인 태블릿, 모바일 이미지">
+              </div>
+            </div>
+            <!-- //detail-output -->
+          </div>
+        </section>
+        <!-- //content5-project-output -->
+        <section class="content6-project-view-bobbi">
+          <div class="detail-output-sub">
+            <h3 class="hidden">Out Put Sub</h3>
+            <div class="login-veiw">
+              <div class="container">
+                <p><strong>Login</strong></p>
+                <p>
+                  기존의 이메일 가입방식에서 SNS 간편 로그인 기능을 도입하였다.<br>
+                  이는 로그인 실패로 인해 생기는 복잡한 절차를 겪지 않도록 하며,
+                  이탈률에도 긍정적인 영향을 준다.
+                </p>
+                <img src="images/sub/project_01/output-login.jpg" alt="로그인 이미지">
+              </div>
+            </div>
+            <!-- //login-veiw -->
+            <div class="otherpage-view">
+              <div class="view-tit">
+                <p><strong>Other Pages</strong></p>
+              </div>
+              <div class="view-wrap">
+                <div class="container">
+                  <div class="tab-txt">
+                    <div class="inner-box">
+                      <p>
+                        UX를 향상하기 위해 회원가입에 옵션을 단순화하는 등
+                        최소한의 정보만 요구하였다.<br>
+                        다양한 메이크업 방법을 동영상과 이미지로 알려주는 How To
+                        페이지를 제공하였다.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- //tab-txt -->
+                  <div class="tab-box">
+                    <ul class="list-btn-box">
+                      <li class="btn num01">
+                        <a href="images/sub/project_01/otherPage_01.jpg">
+                          JOIN
+                        </a>
+                      </li>
+                      <li class="btn num02">
+                        <a href="images/sub/project_01/otherPage_02.jpg">
+                          HOW TO
+                        </a>
+                      </li>
+                    </ul>
+                    <div class="slide-tab">
+                      <img src="images/sub/project_01/otherPage_01.jpg" alt="서브페이지">
+                    </div>
+                  </div>
+                  <!-- //tab-box -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- //detail-output-sub -->
+        </section>
+        <!-- //content6-project-output -->
+        <section class="pageControl-btn">
+          <h3 class="hidden">페이지 이동 버튼</h3>
+          <div class="prev-box">
+            <a href="project-event.html">이전 프로젝트</a>
+          </div>
+          <div class="next-box">
+            <a href="project-LGeshop.html">다음 프로젝트</a>
+          </div>
+        </section>
+        <!-- //pageControl-btn -->
+      </main>
+      <!-- //main -->
+      <footer id="footer">
+        <div class="container">
+          <div class="copyright">
+            <div class="copyright_portfolio">
+              <p>ⓒ Oh KyungHee</p>
+            </div>
+            <nav class="footer_nav">
+              <ul>
+                <li><a href="portfolio-project-list.html">Portfolio</a></li>
+                <li><a href="about.html">About</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </footer>
+      <!-- //footer -->
+    </div>
+  </body>
+</html>

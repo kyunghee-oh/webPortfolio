@@ -1,0 +1,687 @@
+/* PC [1280] ~  */
+
+/* //공통 */
+h3{ line-height: 1.2; font-size: 26px; }
+h3 span{
+  display: block;
+  font-size: 16px;
+  color: #586475;
+}
+.gnb_menu .pf_color, .gnb_menu .about_color{ color: #f35406; }
+.sub-color{ background-color: #fff; }
+
+/* 포트폴리오 프로젝트 리스트 */
+.content-portfolio{ padding-top: 100px; padding-bottom: 130px; }
+.intro-txt{ padding-bottom: 68px; }
+.intro-txt h2{ font-size: 65px; font-weight: 400; }
+.intro-txt p{
+  margin-top: 60px;
+  padding-right: 14%;
+  line-height: 1.5;
+}
+
+.project-list-box::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.project-list-box .item{ float: left; width: 33.333%; }
+.project-list-box .item a{
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.project-list-box .item a img{ vertical-align: middle; width: 100%; }
+.project-list-box .item a .info-tit{
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-size: 18px;
+  color: #fffcfc;
+  z-index: 10;
+}
+.project-list-box .item a .info-box{
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 37% 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+  transition-duration: .3s;
+  opacity: 0;
+}
+.project-list-box .item a .info-box:hover{ opacity: 1; }
+.info-box .list-tit{
+  display: block;
+  text-align: center;
+  line-height: 1.5;
+  font-size: 18px;
+  color: #fffcfc;
+}
+.info-box .list-tit .more-btn{
+  display: block;
+  margin: 0 auto;
+  padding-top: 20px;
+  width: 39px;
+  font-size: 16px;
+  border-bottom: 1px solid #fffcfc;
+}
+.pageControl-btn{ border-bottom: 1px solid #586475; }
+.pageControl-btn::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.pageControl-btn .home-box, .pageControl-btn .about-box{
+  float: left;
+  padding: 30px 0;
+  width: 50%;
+  background-color: #343648;
+  transition: box-shadow 0.25s ease-in-out;
+}
+.home-box{ border-right: 0.5px solid #586475; }
+.about-box{ border-left: 0.5px solid #586475; }
+.pageControl-btn .home-box:hover, .pageControl-btn .about-box:hover{ box-shadow: inset -24em 0 0 0 #b04815, inset 24em 0 0 0 #b04815; }
+
+/* 프로젝트 - lgeshop */
+.content1-project-intro{ padding-top: 100px; padding-bottom: 60px; }
+.detail-tit{ padding-bottom: 68px; }
+.detail-tit h2{ font-size: 65px; font-weight: 400; }
+.detail-tit p{ margin-top: 60px; padding-right: 14%; }
+.detail-tit p span{ border-bottom: 3px solid #e73c2cad; }
+.detail-mockup-img img{ width: 100%; }
+.detail-info{ padding-top: 60px; }
+.detail-info .sub-tit{ margin-top: 40px; }
+.detail-info .sub-tit li{ margin-bottom: 18px; color: #586475; }
+.detail-info .sub-tit li strong{ padding-right: 26px; color: #3f404e; }
+.detail-info .sub-tit li:nth-child(3) strong{ padding-right: 57px; }
+.detail-info .sub-tit li:nth-child(4) strong{ padding-right: 30px; }
+.detail-info .sub-tit li span{ border-bottom: 3px solid #e73c2ca1; }
+.detail-info a{
+  display: block;
+  margin-top: 12px;
+  padding: 12px 10px;
+  text-align: center;
+  width: 160px;
+  color: #fffcfc;
+  background-color: #f35406;
+}
+
+.content2-project-solution{ padding: 60px 0 70px; background-color: #e0e3e6; }
+.detail-asis-tobe .asis{ margin-top: 40px; }
+.detail-asis-tobe .asis img, .detail-asis-tobe .tobe img{ width: 100%; }
+.detail-asis-tobe .asis span, .detail-asis-tobe .tobe span{ display: block; text-align: center; }
+.detail-asis-tobe .asis .txt p, .detail-asis-tobe .tobe .txt p{ margin-right: 8%; padding-bottom: 30px; }
+.detail-asis-tobe .tobe{ margin-top: 80px; }
+
+.content3-project-concept{ padding: 100px 0 70px; background-color: #313131 ; }
+.detail-concept p strong{ color: #f35406; }
+.detail-concept h3{
+  line-height: 1.2;
+  font-size: 26px;
+  color: #fffcfc;
+}
+.detail-concept h3 span{
+  display: block;
+  font-size: 16px;
+  color: #9e9591;
+}
+.detail-concept p{ color: #9e9591; }
+.detail-concept .border-img{ margin-top: 40px; }
+.detail-concept .border-img .img-pc{
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  width: 80%;
+}
+.detail-concept .border-img .img-m{
+  display: none; }
+.detail-concept .color{ margin-top: 53px; }
+.detail-concept .gide-list{ padding: 30px 0; }
+.detail-concept .gide-list::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.detail-concept .gide-list li{
+  float: left;
+  padding-right: 13%;
+  text-align: center;
+  color: #9e9591;
+}
+.detail-concept .gide-list li .item{
+  display: block;
+  margin: 0 20px 15px 20px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #464545;
+}
+.detail-concept .gide-list li .color01{ background-color: #be0048; }
+.detail-concept .gide-list li .color02{ background-color: #363636; }
+.detail-concept .gide-list li .color03{ background-color: #fffcfc; }
+.detail-concept .typography{ margin-top: 53px; }
+.detail-concept .typography p{ padding-bottom: 30px; }
+.detail-concept .typography img{ margin-bottom: 30px; width: 400px; }
+
+.content4-project-planing{ padding: 100px 0; }
+.detail-ia{ padding-bottom: 100px; }
+.detail-ia img{ padding-top: 40px; width: 100%; }
+.detail-sketch{ padding: 100px 0; }
+.detail-sketch img{
+  display: block;
+  margin: 0 auto;
+  padding-top: 40px;
+  width: 90%;
+}
+.detail-wireframe{ padding-top: 100px; }
+.detail-wireframe img{
+  display: block;
+  margin: 0 auto;
+  padding-top: 40px;
+  width: 90%;
+}
+
+.content5-project-veiw{ padding: 100px 0 20px; }
+.detail-output .main-veiw{ margin-top: 40px; }
+.detail-output .main-veiw p{
+  margin: 0 auto;
+  text-align: center;
+  width: 67%;
+}
+.detail-output .main-veiw p strong{ font-size: 60px; }
+.detail-output .main-veiw img{
+  display: block;
+  margin: 0 auto;
+  padding-top: 40px;
+  width: 90%;
+}
+
+.content6-project-view{ padding: 20px 0 100px; }
+.detail-output-sub .shopping-veiw{ padding-bottom: 20px; }
+.detail-output-sub p{
+  margin: 0 auto;
+  padding-bottom: 20px;
+  text-align: center;
+  width: 67%;
+}
+.detail-output-sub p strong{ font-size: 54px; }
+.detail-output-sub img{
+  display: block;
+  margin: 0 auto;
+  padding-top: 20px;
+  width: 90%;
+}
+.detail-output-sub .size{ width: 100%; }
+.detail-output-sub .otherpage-view{ padding-top: 20px; }
+.detail-output-sub .otherpage-view::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.detail-output-sub .otherpage-view .view-tit{
+  margin: 0 auto;
+  padding: 0 28px;
+  max-width: 1280px;
+}
+.detail-output-sub .otherpage-view .view-wrap::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.detail-output-sub .otherpage-view .view-wrap{ margin-top: 40px; }
+.detail-output-sub .otherpage-view .tab-txt{ float: left; width: 40%; }
+.detail-output-sub .otherpage-view .tab-txt .inner-box{ margin: 46% auto; }
+.detail-output-sub .otherpage-view .tab-box{ float: left; width: 60%; }
+.detail-output-sub .otherpage-view .tab-box::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.detail-output-sub .tab-box .list-btn-box{ margin: 0 auto; width: 250px; }
+.detail-output-sub .tab-box .list-btn-box::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.detail-output-sub .tab-box .list-btn-box .btn{
+  float: left;
+  margin-right: 10px;
+  padding: 5px;
+  width: 100px;
+  border: 3px solid #f35406;
+}
+.detail-output-sub .tab-box .list-btn-box .btn:hover{ background-color: #f35406; transition: all .5s ease; }
+.detail-output-sub .tab-box .list-btn-box .btn a{
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: #f35406;
+  font-weight: 500;
+}
+.detail-output-sub .tab-box .list-btn-box .btn a:hover{ color: #fff; transition: box-shadow 0.25s ease-in-out; }
+.detail-output-sub .tab-box .slide-tab{ width: 100%; height: 500px; }
+.detail-output-sub .tab-box .slide-tab img{
+  position: absolute;
+  padding-top: 25px;
+  width: 54%;
+}
+
+.pageControl-btn .prev-box, .pageControl-btn .next-box{
+  float: left;
+  padding: 30px 0;
+  width: 50%;
+  background-color: #343648;
+  transition: box-shadow 0.25s ease-in-out;
+}
+.prev-box{ border-right: 0.5px solid #586475; }
+.next-box{ border-left: 0.5px solid #586475; }
+.pageControl-btn .prev-box:hover, .pageControl-btn .next-box:hover{ box-shadow: inset -24em 0 0 0 #b04815, inset 24em 0 0 0 #b04815; }
+.pageControl-btn a{
+  display: block;
+  text-align: center;
+  color: #fffcfc;
+}
+
+
+/* 프로젝트 - 바비브라운 */
+.detail-info .sub-tit li:nth-child(5) strong{ padding-right: 43px; }
+
+.detail-concept .skill{ margin-top: 53px; }
+.detail-concept .sheet-list{ padding: 30px 0; }
+.detail-concept .sheet-list li{ line-height: 1.5; color: #9e9591; }
+
+.detail-sketch-bobbi h3{
+  line-height: 1.2;
+  font-size: 26px;
+  color: #3f404e;
+}
+.detail-sketch-bobbi h3 span{
+  display: block;
+  font-size: 16px;
+  color: #586475;
+}
+.detail-sketch-bobbi img{
+  display: block;
+  margin: 0 auto;
+  padding-top: 40px;
+  width: 90%;
+}
+.content5-project-veiw-bobbi{ padding: 100px 0 20px; background-color: #e0e3e6; }
+.detail-output .main-veiw span{
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+  color: #586475;
+  }
+.detail-output .main-veiw .tablet-m-img{ padding-top: 5px; width: 100%; }
+.detail-output-sub .login-veiw{ padding-bottom: 20px; }
+
+.content6-project-view-bobbi{ padding: 20px 0 100px; background-color: #e0e3e6; }
+
+
+
+/* 프로젝트 - 애플뮤직 */
+.content4-project-planing-apple{ padding-bottom: 100px; background-color: #0d0d0e; }
+
+.content5-project-veiw-home{ padding: 100px 0 20px; background-color: #f35406; }
+.content5-project-veiw-home .detail-output h3 span{ color: #3f404e; }
+.content5-project-veiw-home .detail-output .main-veiw p{ color: #fffcfc; }
+
+.content6-project-view-apple{ padding: 100px 0; background-color: #333; }
+.detail-output-sub .my-veiw, .detail-output-sub .foryou-view,
+.detail-output-sub .radio-view{ padding-bottom: 20px; }
+.detail-output-sub .more-view::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.detail-output-sub .more-view .tab-txt{ float: left; width: 40%; }
+.detail-output-sub .more-view .inner-box{ margin: 50% auto; }
+.detail-output-sub .more-view .tab-box{ float: left; width: 60%; }
+.detail-output-sub .more-view .tab-box img{ width: 100%; }
+
+
+/* 프로젝트 - 상세 및 이벤트페이지 */
+.content2-project-planing{ padding: 60px 0 100px; background-color: #eee; }
+.detail-plan-process .border-img{ margin-top: 40px; }
+.detail-plan-process .border-img .img-pc{
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  width: 80%;
+}
+.detail-plan-process .border-img .img-m{ display: none; }
+.detail-plan-process .process-img{ margin-top: 53px; }
+.detail-plan-process .process-img span{ display: block; text-align: center; }
+.detail-plan-process .process-img img{ width: 100%; }
+
+.content3-project-veiw{ padding: 100px 0; }
+.detail-detailPage .allDay-veiw, .detail-detailPage .oneDay-veiw{ margin-top: 40px; }
+.detail-detailPage .allDay-veiw::after, .detail-detailPage .oneDay-veiw::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.detail-detailPage p{ margin-bottom: 20px; }
+.detail-detailPage p strong{
+  display: block;
+  text-align: center;
+  font-size: 60px;
+}
+
+.content4-project-veiw{ padding-bottom: 160px; }
+.event-veiw{ margin-top: 40px; }
+.event-veiw::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.sub-txt-box{ float: left; width: 40%; }
+.inner-box{ margin: 50% auto; width: 78%; }
+.inner-box .sub-tit{ margin-bottom: 20px; }
+.inner-box .sub-tit li{ color: #586475; }
+.inner-box .sub-tit li strong{ padding-right: 26px; color: #3f404e; }
+.output-box{ float: left; width: 60%; }
+.output-box img{ width: 100%; }
+.otherDetail-veiw .item-img::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.detail-detailPage .item-img li{ width: 18.4%; }
+.detail-promotionEvent .item-img li{ width: 32%; }
+.detail-promotionEvent .otherDetail-veiw{ margin: 0 auto; width: 80%; }
+.otherDetail-veiw .item-img li{
+  float: left;
+  margin-right: 2%;
+  margin-bottom: 2%;
+}
+.otherDetail-veiw .item-img li:last-child{ margin-right: 0;}
+.otherDetail-veiw .item-img li img{ vertical-align: middle; width: 100%; }
+.detail-promotionEvent .otherDetail-veiw .item-img{ margin: 0 auto; max-width: 960px; }
+
+
+/* about */
+.content1-about-row-1{ padding: 100px 0; }
+.content1-about-row-1::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.about .propile-card img{ width: 100%; }
+.about .propile-card .color{ font-weight: 600; color: #f35406; }
+
+.content2-about-row-2{ padding-bottom: 60px; }
+.about-intro{ width: 63%; }
+.about-intro p{ margin-top: 30px; }
+
+.content3-about-row-3{ padding: 60px 0 100px; }
+.propile-box-row-1{ margin: 30px 0; }
+.sub-tit li{ margin-bottom: 10px; color: #586475; }
+.propile-box-row-1 .propile-co-2 .sub-tit li strong{ padding-right: 26px; color: #3f404e; }
+.propile-box-row-1 .propile-co-2 .sub-tit .tit-resume02:last-child strong{ padding-right: 46px; }
+.propile-box-row-2{ padding-top: 40px; }
+.propile-box-row-2 .skill{ margin-bottom: 60px; }
+.propile-box-row-2 .sub-tit{ margin-top: 30px; }
+
+.pageControl-btn .portfolio-box{
+  float: left;
+  padding: 30px 0;
+  width: 50%;
+  background-color: #343648;
+  border-right: 0.5px solid #586475;
+  transition: box-shadow 0.25s ease-in-out;
+}
+.pageControl-btn .portfolio-box:hover{ box-shadow: inset -24em 0 0 0 #b04815, inset 24em 0 0 0 #b04815; }
+
+
+/* contact */
+.content{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #eee;
+  opacity: 0;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+  z-index: 1000;
+}
+.content:target{
+  opacity: 1;
+  pointer-events: auto;
+}
+.content > div{
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 70%;
+  overflow: auto;
+}
+
+
+
+/* PC [~1279] */
+@media screen and (max-width:1279px)
+{
+  /* 프로젝트 - 바비브라운 */
+  .detail-output-sub .tab-box .slide-tab{ height: 455px; }
+
+}
+/* TABLET2 [~1024] */
+@media screen and (min-width:769px) and (max-width:1024px)
+{
+  /* 포트폴리오 프로젝트 리스트 */
+  .project-list-box .item{ width: 50%; }
+  .project-list-box .item a .info-box{ padding: 40% 0; }
+
+  /* 프로젝트 - 바비브라운 */
+  .detail-output-sub .tab-box .slide-tab{ height: 402px; }
+
+  /* 프로젝트 - LGeshop */
+  .detail-tit h2{ font-size: 56px; }
+  .detail-concept .border-img .img-pc{ width: 80%; }
+
+  .detail-output .main-veiw p{ width: 70%; }
+  .detail-output .main-veiw p strong{ font-size: 56px; }
+
+  /* 프로젝트 - 상세 및 이벤트페이지 */
+  .detail-detailPage p strong{ font-size: 56px; }
+
+
+  /* about */
+  .about-intro{ width: 80%; }
+
+
+}
+/* TABLET1 [~768] */
+@media screen and (min-width:481px) and (max-width:768px)
+{
+  /* 포트폴리오 프로젝트 리스트 */
+  .intro-txt h2{ line-height: 1.2; font-size: 56px; }
+  .project-list-box .item{ width: 100%; }
+  .project-list-box .item a .info-tit{
+    bottom: 30px;
+    left: 30px;
+    font-size: 28px;
+  }
+  .info-box .list-tit{ font-size: 28px; }
+  .info-box .list-tit .more-btn{ width: 60px; font-size: 26px; }
+
+
+  /* 프로젝트 - 바비브라운 */
+  .detail-output-sub .otherpage-view .view-wrap{ margin-top: 0; }
+  .detail-output-sub .tab-box .list-btn-box{ width: 220px; }
+  .detail-output-sub .tab-box .slide-tab{ height: 466px; }
+  .detail-output-sub .tab-box .slide-tab img{ left: 4%; width: 90%; }
+
+  /* 프로젝트 - LGeshop */
+  .detail-tit h2{ font-size: 56px; }
+
+  .detail-concept .border-img .img-pc{ display: none; }
+  .detail-concept .border-img .img-m{
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    width: 80%;
+  }
+  .detail-concept .typography img{ width: 300px; }
+  .detail-output .main-veiw p{ width: 70%; }
+  .detail-output .main-veiw p strong{ font-size: 54px; }
+  .detail-output-sub p{ width: 70%; }
+  .detail-output-sub .otherpage-view .tab-txt{ width: 100%; }
+  .detail-output-sub .otherpage-view .tab-txt .inner-box{ margin: 0 auto; }
+  .detail-output-sub .otherpage-view .tab-box{ margin-top: 30px; width: 100%;}
+
+
+  /* 프로젝트 - 애플뮤직 */
+  .detail-output-sub .more-view .tab-txt,
+  .detail-output-sub .more-view .tab-box{ width: 100%; }
+  .detail-output-sub .more-view .inner-box{ margin: 0 auto; }
+
+
+  /* 프로젝트 - 상세 및 이벤트페이지  */
+  .detail-plan-process .border-img .img-pc{ display: none; }
+  .detail-plan-process .border-img .img-m{
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    width: 80%;
+  }
+  .detail-detailPage p strong{ font-size: 54px; }
+  .sub-txt-box{ width: 100%; }
+  .inner-box{
+    margin: 0 auto;
+    text-align: center;
+    width: 70%;
+  }
+  .output-box{ width: 100%; }
+  .output-box img{
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+  }
+  .detail-detailPage .otherDetail-veiw{ margin: 0 auto; width: 80%; }
+  .detail-detailPage .item-img li{ width: 49%; }
+  .detail-detailPage .item-img li:nth-child(2), .detail-detailPage .item-img li:nth-child(4){ margin-right: 0; }
+
+
+  /* about */
+  .about-intro{ width: 89%; }
+
+
+}
+
+/* 모바일 [~320] */
+@media screen and (max-width:480px)
+{
+  /* 포트폴리오 프로젝트 리스트 */
+  .content-portfolio{ padding-top: 68px; }
+  .intro-txt h2{ line-height: 1.2; font-size: 52px; }
+  .intro-txt p{ font-size: 15px; }
+  .project-list-box .item{ width: 100%; }
+
+
+  /* 프로젝트 - 바비브라운 */
+  .detail-output .main-veiw span{ font-size: 15px; }
+  .detail-output-sub .tab-box .list-btn-box{ width: 172px; }
+  .detail-output-sub .tab-box .list-btn-box .btn{ width: 76px; }
+  .detail-output-sub .tab-box .list-btn-box .btn a{ font-size: 15px; }
+  .detail-output-sub .tab-box .slide-tab{ height: 321px; }
+  .detail-output-sub .tab-box .slide-tab img{ width: 100%; }
+
+
+  /* 프로젝트 - LGeshop */
+  p{ font-size: 15px; }
+  h3{ font-size: 22px; }
+  h3 span{ font-size: 14px; }
+
+  .detail-tit h2{ font-size: 52px; }
+  .detail-tit p{ padding-right: 0; }
+  .detail-info .sub-tit li{ line-height: 1.5; font-size: 14px; }
+  .detail-info .sub-tit li strong{ padding-right: 16px; }
+  .detail-info .sub-tit li:nth-child(3) strong{ padding-right: 44px; }
+  .detail-info .sub-tit li:nth-child(4) strong{ padding-right: 22px; }
+  .detail-info a{ width: 142px; font-size: 15px; }
+
+  .content2-project-solution{ padding-bottom: 30px; }
+  .detail-asis-tobe .asis span,
+  .detail-asis-tobe .tobe span{ padding-bottom: 5px; font-size: 15px; }
+  .detail-asis-tobe .asis .txt p,
+  .detail-asis-tobe .tobe .txt p{ margin-right: 0; }
+
+  .content3-project-concept{ padding: 60px 0 30px; }
+  .detail-concept h3{ font-size: 22px; }
+  .detail-concept h3 span{ font-size: 14px; }
+  .detail-concept .border-img .img-pc{ display: none; }
+  .detail-concept .border-img .img-m{
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    width: 80%;
+  }
+  .detail-concept .gide-list li{ padding-right: 5%; }
+  .detail-concept .typography img{ width: 100%; }
+
+  .content4-project-planing{ padding: 60px 0; }
+  .detail-ia{ padding-bottom: 60px; }
+  .detail-sketch{ padding: 60px 0; }
+  .detail-wireframe{ padding-top: 60px; }
+
+  .content5-project-veiw{ padding-top: 60px; }
+  .detail-output .main-veiw p strong{ font-size: 40px; }
+  .detail-output .main-veiw p{ width: 80%; }
+
+  .content6-project-view{ padding-bottom: 60px; }
+  .detail-output-sub .otherpage-view .tab-txt{ width: 100%; }
+  .detail-output-sub .otherpage-view .tab-txt .inner-box{ margin: 0 auto; }
+  .detail-output-sub .otherpage-view .tab-box{ margin-top: 30px; width: 100%; }
+
+
+  /* 프로젝트 - 애플뮤직 */
+  .detail-output-sub p{ width: 80%; }
+  .detail-output-sub p strong{ font-size: 40px; }
+  .detail-output-sub .more-view .tab-txt,
+  .detail-output-sub .more-view .tab-box{ width: 100%; }
+  .detail-output-sub .more-view .inner-box{ margin: 0 auto; }
+
+
+  /* 프로젝트 - 상세 및 이벤트페이지  */
+  .detail-plan-process .border-img .img-pc{ display: none; }
+  .detail-plan-process .border-img .img-m{
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    width: 80%;
+  }
+  .detail-detailPage p strong{ font-size: 40px; }
+  .sub-txt-box{ width: 100%; }
+  .inner-box{
+    margin: 0 auto;
+    text-align: center;
+    width: 80%;
+  }
+  .output-box{ width: 100%; }
+  .output-box img{
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+  }
+  .detail-detailPage .otherDetail-veiw{ margin: 0 auto; width: 80%; }
+  .detail-detailPage .item-img li{ width: 49%; }
+  .detail-detailPage .item-img li:nth-child(2), .detail-detailPage .item-img li:nth-child(4){ margin-right: 0; }
+
+  .content4-project-veiw{ padding-bottom: 120px; }
+
+  /* about */
+  .about-intro{ width: 100%; }
+
+
+}

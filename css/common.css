@@ -1,0 +1,124 @@
+/* reset css */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, button,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: 0;
+	font-size: 100%;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section{
+	display: block;
+}
+
+body{ line-height: 1.5; letter-spacing: -1px; word-break: keep-all; }
+
+ol, ul, li{
+	list-style: none;
+}
+blockquote, q{
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after{
+	content: '';
+	content: none;
+}
+table{
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* base css */
+body{ font-family: 'Noto Sans CJK KR', 'Roboto', "나눔 고딕", "맑은 고딕", malgun gothic, "돋움", Dotum, sans-serif; }
+a{ text-decoration: none; color: #586475; }
+h1, h3{ color: #3f404e; }
+h2, p{ color: #586475; }
+
+/* font */
+@font-face {
+  font-family:'Roboto';
+  font-style: normal;
+  font-weight: 100;
+  src: url('../font/Roboto/Roboto-Regular.eot');
+  src: url('../font/Roboto/Roboto-Regular.eot?#iefix') format('embedded-opentype');
+  src: local("?"),
+  url('../font/Roboto/Roboto-Regular.woff') format('woff'),
+  url('../font/Roboto/Roboto-Regular.otf') format('opentype');
+}
+@font-face {
+  font-family:'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../font/Roboto/Roboto-bold.eot');
+  src: url('../font/Roboto/Roboto-bold.eot?#iefix') format('embedded-opentype');
+  src: local("?"),
+  url('../font/Roboto/Roboto-bold.woff') format('woff'),
+  url('../font/Roboto/Roboto-bold.otf') format('opentype');
+}
+@font-face {
+	font-family:'Noto Sans CJK KR';
+	font-style: normal;
+	font-weight: 100;
+	src: url('../font/Notosans/NotoSansCJKkr-Thin.eot');
+	src: url('../font/Notosans/NotoSansCJKkr-Thin.eot?#iefix') format('embedded-opentype');
+	src: local("?"),
+	url('../font/Notosans/NotoSansCJKkr-Thin.woff') format('woff'),
+	url('../font/Notosans/NotoSansCJKkr-Thin.otf') format('opentype');
+}
+@font-face {
+  font-family:'Noto Sans CJK KR';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../font/Notosans/NotoSansCJKkr-Regular.eot');
+  src: url('../font/Notosans/NotoSansCJKkr-Regular.eot?#iefix') format('embedded-opentype');
+  src: local("?"),
+  url('../font/Notosans/NotoSansCJKkr-Regular.woff') format('woff'),
+  url('../font/Notosans/NotoSansCJKkr-Regular.otf') format('opentype');
+}
+
+
+/* skip */
+.skip-nav{ width: 100%; }
+.skip-nav li a:link{
+	display: block;
+	position: absolute;
+	left: 0; top: -100px;
+	padding: 13px 0;
+	text-align: center;
+	width: 100%;
+	background-color: rgba(0,0,0,0.8);
+	font-weight: bold;
+	z-index: 3000;
+}
+.skip-nav li a:focus , .skip-nav li a:active{ top: 0; color: #fffcfc; }
+
+/* layout */
+#wrapper{ width: 100%; }
+#header{ width: 100%; height: 80px; }
+#footer{
+	width: 100%;
+	height: 80px;
+	background-color: #343648;
+}
+.container{
+	overflow: hidden;
+	position: relative;
+	margin: 0 auto;
+	padding: 0 28px;
+	max-width: 1280px;
+	height: 100%;
+}

@@ -1,0 +1,534 @@
+/* PC [1280] ~  */
+#main{ position: relative; }
+
+/* 공통(IR효과 숨김처리) */
+.hidden{
+  overflow: hidden;
+  border: 0;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+}
+
+/* header */
+.index-color{ background-color: #e0e3e6; }
+.logo{
+  position: absolute;
+  top: 20px;
+  width: 50px;
+}
+.logo a{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.logo a img{ width: 100%; }
+.gnb .gnb_menu{ text-align: right; }
+.gnb .gnb_menu li{
+  display: inline-block;
+  padding: 32px 0 32px 26px;
+}
+.gnb .gnb_menu li a{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.gnb .gnb_menu li a:hover{ color: #f35406; transition: color 0.3s ease; }
+.nav-mbtn{ display: none; }
+.m-gnb{ display: none; }
+
+/* 메인 */
+.content1_pf_collection{ padding-bottom: 100px; background-color: #e0e3e6; }
+.content1_pf_collection::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+/* //인트로:내 소개 */
+.article{
+  float: left;
+  width: 32%;
+  height: 100%;
+}
+.article .intro{ padding: 47% 20px; }
+.article .intro .tit{
+  position: relative;
+  line-height: 1;
+  font-size: 65px;
+  font-weight: 600;
+  color: #f35406;
+  z-index: 10;
+}
+.article .intro .tit::after{
+  content: "";
+  position: absolute;
+  bottom: -32px; left: 0;
+  width: 76px;
+  height: 3px;
+  background-color: #f35406;
+}
+.article .intro .tit span{
+  display: inline-block;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 32px;
+  color: #657283;
+}
+.article .intro p{
+  margin-top: 60px;
+  width: 95%;
+  color: #f35406;
+}
+/* //포트폴리오 소개:슬라이드 */
+.slide-wrapper{
+  overflow: hidden;
+  position: relative;
+  float: left;
+  margin: 0 auto;
+  width: 68%;
+  height: 772px;
+}
+.slide-wrapper-content{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.slide-wrapper-content > li{ width: 100%; height: 100%; }
+.slide-wrapper-item{ width: 600%; height: 100%; }
+.slide-wrapper-item::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.slide-wrapper-item li{
+  position: relative;
+  float: left;
+  width: 16.666%;
+  height: 100%;
+}
+.slide-wrapper-item .item-img01{ background: url(../images/common/bb_1_2000.jpg)50% 0 no-repeat; background-size: cover; }
+.slide-wrapper-item .item-img02{ background: url(../images/common/lg_1_2000.jpg)50% 0 no-repeat; background-size: cover; }
+.slide-wrapper-item .item-img03{ background: url(../images/common/ap_1_2000.jpg)50% 0 no-repeat; background-size: cover; }
+.slide-wrapper-item .item-img04{ background: url(../images/common/event_1_2000.jpg)50% 0 no-repeat; background-size: cover; }
+.slide-wrapper-item .item-img05{ background: url(../images/common/ap_1.jpg)50% 0 no-repeat; background-size: cover; }
+.slide-wrapper-item .item-img06{ background: url(../images/common/ap_1.jpg)50% 0 no-repeat; background-size: cover; }
+.slide-wrapper-item li a{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.slide-wrapper-item .list-tit{
+  display: block;
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  font-size: 40px;
+  color: #eee;
+}
+.slide-wrapper-item .list-tit .sub-tit{
+  display: block;
+  font-size: 20px;
+  font-weight: 200;
+}
+.slide-wrapper .ctrol-btn{
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  color: #eee;
+}
+.slide-wrapper .ctrol-btn::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.slide-wrapper .ctrol-btn .prev{ float: left; }
+.slide-wrapper .ctrol-btn .next{ float: right; }
+.slide-wrapper .ctrol-btn .prev,
+.slide-wrapper .ctrol-btn .next{ width: 60px; height: 40px; }
+.slide-wrapper .ctrol-btn .prev a,
+.slide-wrapper .ctrol-btn .next a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-indent: -999px;
+}
+.slide-wrapper .ctrol-btn .prev a{ background: url(../images/common/icon/left01.png)50% no-repeat; background-size: 40px; }
+.slide-wrapper .ctrol-btn .next a{ background: url(../images/common/icon/right01.png)50% no-repeat; background-size: 40px; }
+.slide-wrapper .ctrol-btn .paging_num{ text-align: center; padding-bottom: 5px; }
+
+/* My Skill:내 스킬 */
+.content2-about{ padding: 100px 0px 60px; background-color: #343648; }
+.content2-about h3{
+  margin-bottom: 65px;
+  text-align: center;
+  font-size: 26px;
+  color: #fffcfc;
+}
+/* //skill intro:작업방식 및 능력*/
+.content2-about .skill-intro{
+  text-align: center;
+  padding-bottom: 60px;
+  border-bottom: 1px dashed #363636;
+}
+.skill-intro .skill-img-pc{ width: 80%; }
+.skill-intro .skill-img-m{ display: none; }
+/* //skill: 디자인, 퍼블리싱 */
+.skill-box{ padding-top: 100px; }
+.skill-box .design{ padding-bottom: 60px; }
+.skill-box .design::after,
+.skill-box .publishing::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.skill-box .txt-wrap{ width: 50%; }
+.skill-box .design .txt-wrap{ float: right; }
+.skill-box .publishing .txt-wrap{ float: left; }
+.skill-box .txt-box{ padding-top: 8px; padding-left: 60px; }
+.skill-box .txt-box p{
+  margin-bottom: 40px;
+  width: 66%;
+  line-height: 1.4em;
+  color: #fffcfc;
+}
+.skill-box .txt-box p strong{ font-size: 60px; color: #657283; }
+.skill-box .txt-list li{ margin-bottom: 10px; color: #fffcfc; }
+.skill-box .chart{ width: 50%; }
+.skill-box .design .chart{ float: left; }
+.skill-box .publishing .chart{ float: right; }
+.skill-box .chart .root-box{ margin-bottom: 20px; opacity: 0; }
+.skill-box .chart .root-box::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.skill-box .chart .root-box img{
+  float: left;
+  width: 36px;
+  height: 36px;
+}
+.animate{ animation: fadeIn 2s forwards ease-in; }
+@keyframes fadeIn{
+  0%{ opacity: 0; }
+  100%{ opacity: 1; }
+}
+.skill-box .chart .root{
+  float: left;
+  margin: 5px 5px;
+  text-align: center;
+  height: 26px;
+  color: #343648;
+  background-color: #f35406;
+  border-radius: 0 30px 30px 0;
+}
+.root.ps, .root.html{ animation: change_width_ps 2s 0.5s forwards; }
+@keyframes change_width_ps{
+  from{ width: 0; }
+  to{ width: 80%; }
+}
+.root.ai, .root.css3{ animation: change_width_ai 2s 0.5s forwards; }
+@keyframes change_width_ai{
+  from{ width: 0; }
+  to{ width: 70%; }
+}
+.root.inde, .root.js{ animation: change_widht_indi 2s 0.5s forwards; }
+@keyframes change_widht_indi{
+  from{ width: 0; }
+  to{ width: 30%; }
+}
+
+
+/* footer */
+.copyright_portfolio{ position: absolute; top: 32.5px; }
+.copyright_portfolio p{ font-size: 16px; color: #657283; }
+.footer_nav{ height: 100%; }
+.footer_nav ul{ text-align: right; height: 100%; }
+.footer_nav ul li{ display: inline-block; padding: 34px 0 34px 20px; }
+.footer_nav ul li a{
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: 13px;
+  color: #f35406;
+}
+
+/* PC [~1279] */
+@media screen and (max-width:1279px)
+{
+/* //인트로:내 소개 */
+.article .intro{ padding: 27% 20px; }
+.article .intro .tit{ font-size: 56px; }
+.article .intro .tit span{
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 25px;
+}
+/* //포트폴리오 소개:슬라이드 */
+.slide-wrapper{ height: 600px; }
+.slide-wrapper-item .item-img01{ background: url(../images/common/bb_1_1600.jpg)50% 0 no-repeat; background-size: cover; }
+.slide-wrapper-item .item-img02{ background: url(../images/common/lg_1_1600.jpg)50% 0 no-repeat; background-size: cover; }
+.slide-wrapper-item .item-img03{ background: url(../images/common/ap_1_1600.jpg)50% 0 no-repeat; background-size: cover; }
+.slide-wrapper-item .item-img04{ background: url(../images/common/event_1_1600.jpg)50% 0 no-repeat; background-size: cover; }
+.slide-wrapper-item .item-img05{ background: url(../images/common/ap_1.jpg)50% 0 no-repeat; background-size: cover; }
+.slide-wrapper-item .item-img06{ background: url(../images/common/ap_1.jpg)50% 0 no-repeat; background-size: cover; }
+.slide-wrapper-item .list-tit{ font-size: 32px; }
+.slide-wrapper-item .list-tit .sub-tit{ font-size: 16px; }
+
+
+}
+
+/* TABLET2 [~1024] */
+@media screen and (min-width:769px) and (max-width:1024px)
+{
+/* //인트로:내 소개 */
+.article{ float: none; width: 100%; }
+.article .intro{ padding: 68px 0; }
+/* //포트폴리오 소개:슬라이드 */
+.slide-wrapper{ float: none; width: 100%; }
+.slide-wrapper-item .item-img01{ background: url(../images/common/bb_2_1600.jpg)50% 0 no-repeat; background-size: cover; }
+.slide-wrapper-item .item-img02{ background: url(../images/common/lg_2_1600.jpg)50% 0 no-repeat; background-size: cover; }
+.slide-wrapper-item .item-img03{ background: url(../images/common/ap_2_1600.jpg)50% 0 no-repeat; background-size: cover; }
+.slide-wrapper-item .item-img04{ background: url(../images/common/event_2_1600.jpg)50% 0 no-repeat; background-size: cover; }
+.slide-wrapper-item .item-img05{ background: url(../images/common/ap_1.jpg)50% 0 no-repeat; background-size: cover; }
+.slide-wrapper-item .item-img06{ background: url(../images/common/ap_1.jpg)50% 0 no-repeat; background-size: cover; }
+
+
+/* //My Skill:내 스킬 */
+.skill-intro .skill-img-pc{ display: none; }
+.skill-intro .skill-img-m{
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+}
+.skill-box .txt-box p strong{ font-size: 54px; }
+
+
+}
+
+/* TABLET1 [~768] */
+@media screen and (min-width:481px) and (max-width:768px)
+{
+/* 공용   */
+#header{ height: 60px; }
+.container{
+  margin: 0 24px;
+  padding: 0;
+  max-width: 768px;
+}
+
+/* header */
+.logo{ width: 30px; }
+
+.gnb{ display: none; }
+.nav-mbtn{
+  display: block;
+  position: absolute;
+  top: 15px; right: 0;
+  width: 30px;
+  height: 30px;
+  line-height: 5px;
+  background: transparent;
+  cursor: pointer;
+}
+.nav-mbtn span{
+  display: inline-block;
+  width: 100%;
+  border: 1.5px solid #586475;
+  border-radius: 2px;
+}
+.m-gnb{
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0 24px;
+  width: 100%;
+  height: 100%;
+  background-color: #f35406;
+  z-index: 999;
+}
+.m-gnb-header{ height: 60px; }
+.m-close-btn-box{
+  position: absolute;
+  top: 24px;
+  right: 24px;
+}
+.m-close-btn-box .close-btn{
+  width: 34px;
+  height: 24px;
+  background: url(../images/common/icon/closeBtn.png)50% 0 no-repeat;
+  background-size: 20px 20px;
+  color: rgba(0,0,0,0);
+  cursor: pointer;
+}
+.m-gnb-menu li{ text-align: center; padding: 45px 0; }
+.m-gnb-menu li a{
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: 26px;
+  color: #fffcfc;
+}
+
+/* //인트로:내 소개 */
+.article{ float: none; width: 100%; }
+.article .intro{ padding: 68px 0; }
+/* //포트폴리오 소개:슬라이드 */
+.slide-wrapper{
+  float: none;
+  width: 100%;
+  height: 400px;
+}
+.slide-wrapper-item .item-img01{ background: url(../images/common/bb_1_1000.jpg)50% 0 no-repeat; background-size: cover; }
+.slide-wrapper-item .item-img02{ background: url(../images/common/lg_1_1000.jpg)50% 0 no-repeat; background-size: cover; }
+.slide-wrapper-item .item-img03{ background: url(../images/common/ap_1_1000.jpg)50% 0 no-repeat; background-size: cover; }
+.slide-wrapper-item .item-img04{ background: url(../images/common/event_1_1000.jpg)50% 0 no-repeat; background-size: cover; }
+.slide-wrapper-item .item-img05{ background: url(../images/common/ap_1.jpg)50% 0 no-repeat; background-size: cover; }
+.slide-wrapper-item .item-img06{ background: url(../images/common/ap_1.jpg)50% 0 no-repeat; background-size: cover; }
+.slide-wrapper-item .list-tit{
+  top: 15px;
+  left: 15px;
+  font-size: 28px;
+}
+.slide-wrapper .ctrol-btn .paging_num{ line-height: 3em; }
+
+/* My Skill:내 스킬 */
+.skill-intro .skill-img-pc{ display: none; }
+.skill-intro .skill-img-m{
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+.skill-box .txt-wrap{ width: 100%; }
+.skill-box .txt-box p strong{ font-size: 54px; }
+.skill-box .txt-list{ margin-bottom: 40px; }
+.skill-box .chart, .skill-box .chart .root{ width: 100%; }
+
+
+}
+/* 모바일 [~320] */
+@media screen and (max-width:480px)
+{
+/* 공용  */
+#header{ height: 60px; }
+.container{
+  margin: 0 16px;
+  padding: 0;
+  max-width: 480px;
+}
+#footer{ height: 140px; }
+
+/* header */
+.logo{ width: 30px; }
+
+.gnb{ display: none; }
+.nav-mbtn{
+  display: block;
+  position: absolute;
+  top: 15px; right: 0;
+  width: 30px;
+  height: 30px;
+  line-height: 5px;
+  background: transparent;
+  cursor: pointer;
+}
+.nav-mbtn span{
+  display: inline-block;
+  width: 100%;
+  border: 1.5px solid #586475;
+  border-radius: 2px;
+}
+.m-gnb{
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0 24px;
+  width: 100%;
+  height: 100%;
+  background-color: #f35406;
+  z-index: 999;
+}
+.m-gnb-header{ height: 60px; }
+.m-close-btn-box{
+  position: absolute;
+  top: 24px;
+  right: 15px;
+}
+.m-close-btn-box .close-btn{
+  width: 34px;
+  height: 24px;
+  background: url(../images/common/icon/closeBtn.png)50% 0 no-repeat;
+  background-size: 20px 20px;
+  color: rgba(0,0,0,0);
+  border: 0;
+  cursor: pointer;
+}
+.m-gnb-menu li{ text-align: center; padding: 60px 0; }
+.m-gnb-menu li a{
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: 26px;
+  color: #fffcfc;
+}
+
+/* //인트로:내 소개 */
+.article{ float: none; width: 100%; }
+.article .intro{ padding: 68px 0; }
+.article .intro .tit{ font-size: 52px; }
+.article .intro p{ padding-right: 0; font-size: 15px; }
+.article .intro .tit span{ font-size: 22px; }
+/* //포트폴리오 소개:슬라이드 */
+.slide-wrapper{
+  float: none;
+  width: 100%;
+  height: 258px;
+}
+.slide-wrapper-item .item-img01{ background: url(../images/common/bb_2_1000.jpg)50% 0 no-repeat; background-size: cover; }
+.slide-wrapper-item .item-img02{ background: url(../images/common/lg_2_1000.jpg)50% 0 no-repeat; background-size: cover; }
+.slide-wrapper-item .item-img03{ background: url(../images/common/ap_2_1000.jpg)50% 0 no-repeat; background-size: cover; }
+.slide-wrapper-item .item-img04{ background: url(../images/common/event_2_1000.jpg)50% 0 no-repeat; background-size: cover; }
+.slide-wrapper-item .item-img05{ background: url(../images/common/ap_1.jpg)50% 0 no-repeat; background-size: cover; }
+.slide-wrapper-item .item-img06{ background: url(../images/common/ap_1.jpg)50% 0 no-repeat; background-size: cover; }
+.slide-wrapper-item .list-tit{
+  top: 15px;
+  left: 15px;
+  line-height: 1;
+  font-size: 22px;
+}
+.slide-wrapper-item .list-tit .sub-tit{ margin-top: 10px; }
+.slide-wrapper .ctrol-btn .paging_num{ line-height: 3em; }
+.slide-wrapper-item .list-tit .sub-tit{ margin-top: 10px; font-size: 15px; }
+.slide-wrapper .ctrol-btn .paging_num{ line-height: 3em; }
+
+/* My Skill:내 스킬 */
+.content2-about h3{ font-size: 22px; }
+.skill-intro .skill-img-pc{ display: none; }
+.skill-intro .skill-img-m{
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.skill-box .txt-wrap{ width: 100%; }
+.skill-box .txt-box{ padding-left: 0; }
+.skill-box .txt-box p strong{ font-size: 40px; }
+.skill-box .txt-list{ margin-bottom: 40px; }
+.skill-box .txt-list li{ font-size: 15px; }
+.skill-box .chart, .skill-box .chart .root{
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 100%;
+}
+.skill-box .chart .root-box img{ width: 26px; height: 26px; }
+
+
+/* footer */
+.copyright{ height: 100%; }
+.copyright_portfolio{ top: 62px; }
+
+.footer_nav ul{ padding-top: 61px; }
+.footer_nav ul li{ display: block; padding: 5px 0; }
+
+}

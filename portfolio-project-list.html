@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>Portfolio-project-list</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/sub.css">
+
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- 웹폰트 -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+    <!-- javascript Libraries -->
+    <script src="js/jquery.min_1.12.4.js"></script>
+    <script src="js/modernizr-custom.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- html5shiv IE6~8 -->
+    <!-- [if li IE9] >
+        <script src="js/html5shiv.min.js"></script>
+    <! [endif] -->
+
+  </head>
+  <body>
+    <ul class="skip-nav">
+      <li><a href="#gnb">주메뉴</a></li>
+      <li><a href="#main">메인메뉴</a></li>
+    </ul>
+    <div class="wrapper">
+      <header id="header">
+        <div class="container">
+          <h1 class="logo">
+            <a href="index.html"><img src="images/common/oh-logo.png" alt="로고이미지"><span class="hidden">oh kyunghee logo</span>
+            </a>
+          </h1>
+          <nav class="gnb">
+            <ul class="gnb_menu">
+              <li><a href="portfolio-project-list.html" class="pf_color">Portfolio</a></li>
+              <li><a href="about.html">About</a></li>
+            </ul>
+          </nav>
+          <!-- //PC nav -->
+          <button id="nav-mbtn" class="nav-mbtn">
+            <span class="btn_line"></span>
+            <span class="btn_line"></span>
+            <span class="btn_line"></span>
+          </button>
+          <nav class="m-gnb">
+            <div class="m-gnb-header">
+              <div class="m-close-btn-box">
+                <button type="button" class="close-btn" name="button">닫기</button>
+              </div>
+            </div>
+            <ul class="m-gnb-menu">
+              <li><a href="portfolio-project-list.html">portfolio</a></li>
+              <li><a href="about.html">about</a></li>
+            </ul>
+          </nav>
+          <!-- //모바일 nav -->
+        </div>
+      </header>
+      <!-- //header -->
+      <main id="main">
+        <section class="content-portfolio">
+          <div class="container">
+            <div class="intro-txt">
+              <h2>전문 및 개인프로젝트</h2>
+              <p>
+                웹 퍼블리싱과 디자인, 그리고 앱, 상세 및 이벤트 페이지 디자인을 진행하였습니다.
+              </p>
+            </div>
+            <!-- //intro-txt -->
+            <div class="project-list-wrapper">
+              <ul class="project-list-box">
+                <li class="item">
+                  <a href="project-bobbibrown.html">
+                    <img src="images/sub/bobbi-2000.jpg" alt="프로젝트-바비브라운">
+                    <span class="info-tit">바비브라운</span>
+                    <div class="info-box">
+                      <span class="list-tit">
+                        반응형 웹 퍼블리싱
+                        <span class="more-btn">More</span>
+                      </span>
+                    </div>
+                  </a>
+                </li>
+                <li class="item">
+                  <a href="project-LGeshop.html">
+                    <img src="images/sub/lg_2000.jpg" alt="프로젝트-LG">
+                    <span class="info-tit">LG이샵</span>
+                    <div class="info-box">
+                      <span class="list-tit">
+                        웹 디자인
+                        <span class="more-btn">More</span>
+                      </span>
+                    </div>
+                  </a>
+                </li>
+                <li class="item">
+                  <a href="project-applemusic.html">
+                    <img src="images/sub/apple_2000.jpg" alt="프로젝트-">
+                    <span class="info-tit">애플뮤직</span>
+                    <div class="info-box">
+                      <span class="list-tit">
+                        앱 디자인
+                        <span class="more-btn">More</span>
+                      </span>
+                    </div>
+                  </a>
+                </li>
+                <li class="item">
+                  <a href="project-event.html">
+                    <img src="images/sub/event_2000.jpg" alt="프로젝트-">
+                    <span class="info-tit">상세 및 이벤트페이지</span>
+                    <div class="info-box">
+                      <span class="list-tit">
+                        상세, 이벤트 디자인
+                        <span class="more-btn">More</span>
+                      </span>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- //project-list-wrapper -->
+          </div>
+        </section>
+        <section class="pageControl-btn">
+          <h3 class="hidden">페이지 이동 버튼</h3>
+          <div class="home-box">
+            <a href="index.html">홈으로 돌아가기</a>
+          </div>
+          <div class="about-box">
+            <a href="about.html">About</a>
+          </div>
+        </section>
+        <!-- //pageControl-btn -->
+      </main>
+      <!-- //main -->
+      <footer id="footer">
+        <div class="container">
+          <div class="copyright">
+            <div class="copyright_portfolio">
+              <p>ⓒOh KyungHee</p>
+            </div>
+            <nav class="footer_nav">
+              <ul>
+                <li><a href="portfolio-project-list.html">Portfolio</a></li>
+                <li><a href="about.html">About</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </footer>
+      <!-- //footer -->
+    </div>
+  </body>
+</html>
