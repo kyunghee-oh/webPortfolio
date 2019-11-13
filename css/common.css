@@ -18,35 +18,30 @@ time, mark, audio, video{
 	border: 0;
 	font-size: 100%;
 }
+
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section{
 	display: block;
 }
+body{
+	line-height: 1.5;
+	letter-spacing: -1px;
+	word-break: keep-all;
+}
+ol, ul, li{	list-style: none; }
+blockquote, q{ quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after{ content: ''; content: none; }
+table{ border-collapse: collapse; border-spacing: 0; }
 
-body{ line-height: 1.5; letter-spacing: -1px; word-break: keep-all; }
-
-ol, ul, li{
-	list-style: none;
-}
-blockquote, q{
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after{
-	content: '';
-	content: none;
-}
-table{
-	border-collapse: collapse;
-	border-spacing: 0;
-}
 
 /* base css */
 body{ font-family: 'Noto Sans CJK KR', 'Roboto', "나눔 고딕", "맑은 고딕", malgun gothic, "돋움", Dotum, sans-serif; }
 a{ text-decoration: none; color: #586475; }
 h1, h3{ color: #3f404e; }
 h2, p{ color: #586475; }
+
 
 /* font */
 @font-face {
@@ -105,6 +100,7 @@ h2, p{ color: #586475; }
 	z-index: 3000;
 }
 .skip-nav li a:focus , .skip-nav li a:active{ top: 0; color: #fffcfc; }
+
 
 /* layout */
 #wrapper{ width: 100%; }
