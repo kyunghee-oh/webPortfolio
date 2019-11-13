@@ -9,6 +9,7 @@ $(document).ready(function(){
       $(".slide-wrapper .slide-wrapper-item").css({"marginLeft":"-100%"});
     });
 
+    return false ;
   });
     //이전버튼클릭시
   $(".ctrol-btn .prev").click(function(){
@@ -17,6 +18,7 @@ $(document).ready(function(){
       $(".slide-wrapper .slide-wrapper-item").css({"marginLeft":"-100%"});
     });
 
+    return false ;
   });
 
   // My skill
