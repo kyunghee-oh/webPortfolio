@@ -233,7 +233,7 @@
   from{ width: 0; }
   to{ width: 70%; }
 }
-.root.inde, .root.js{ animation: change_widht_indi 2s 0.5s forwards; }
+.root.inde{ animation: change_widht_indi 2s 0.5s forwards; }
 @keyframes change_widht_indi{
   from{ width: 0; }
   to{ width: 30%; }
