@@ -238,6 +238,11 @@
   from{ width: 0; }
   to{ width: 30%; }
 }
+.root.jquery{ animation: change_widht_jquery 2s 0.5s forwards; }
+@keyframes change_widht_indi{
+  from{ width: 0; }
+  to{ width: 20%; }
+}
 
 
 /* footer */
