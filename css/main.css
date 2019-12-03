@@ -233,8 +233,8 @@
   from{ width: 0; }
   to{ width: 70%; }
 }
-.root.jquery{ animation: change_widht_jquery 2s 0.5s forwards; }
-@keyframes change_widht_jquery{
+.root.js{ animation: change_widht_js 2s 0.5s forwards; }
+@keyframes change_widht_js{
   from{ width: 0; }
   to{ width: 20%; }
 }
