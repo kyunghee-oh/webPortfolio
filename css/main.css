@@ -174,18 +174,18 @@
 }
 .skill-intro .skill-img-pc{ width: 80%; }
 .skill-intro .skill-img-m{ display: none; }
-/* //skill: 디자인, 퍼블리싱 */
+/* //skill: 퍼블리싱, 디자인 */
 .skill-box{ padding-top: 100px; }
 .skill-box .design{ padding-bottom: 60px; }
-.skill-box .design::after,
-.skill-box .publishing::after{
+.skill-box .publishing::after,
+.skill-box .design::after{
   content: "";
   display: block;
   clear: both;
 }
 .skill-box .txt-wrap{ width: 50%; }
-.skill-box .design .txt-wrap{ float: right; }
 .skill-box .publishing .txt-wrap{ float: left; }
+.skill-box .design .txt-wrap{ float: right; }
 .skill-box .txt-box{ padding-top: 8px; padding-left: 60px; }
 .skill-box .txt-box p{
   margin-bottom: 40px;
@@ -196,8 +196,8 @@
 .skill-box .txt-box p strong{ font-size: 60px; color: #657283; }
 .skill-box .txt-list li{ margin-bottom: 10px; color: #fffcfc; }
 .skill-box .chart{ width: 50%; }
-.skill-box .design .chart{ float: left; }
 .skill-box .publishing .chart{ float: right; }
+.skill-box .design .chart{ float: left; }
 .skill-box .chart .root-box{ margin-bottom: 20px; opacity: 0; }
 .skill-box .chart .root-box::after{
   content: "";
@@ -223,25 +223,25 @@
   background-color: #f35406;
   border-radius: 0 30px 30px 0;
 }
-.root.ps, .root.html{ animation: change_width_ps 2s 0.5s forwards; }
+.root.html, .root.ps{ animation: change_width_ps 2s 0.5s forwards; }
 @keyframes change_width_ps{
   from{ width: 0; }
   to{ width: 80%; }
 }
-.root.ai, .root.css3{ animation: change_width_ai 2s 0.5s forwards; }
+.root.css3, .root.ai{ animation: change_width_ai 2s 0.5s forwards; }
 @keyframes change_width_ai{
   from{ width: 0; }
   to{ width: 70%; }
-}
-.root.inde{ animation: change_widht_indi 2s 0.5s forwards; }
-@keyframes change_widht_indi{
-  from{ width: 0; }
-  to{ width: 30%; }
 }
 .root.jquery{ animation: change_widht_jquery 2s 0.5s forwards; }
 @keyframes change_widht_jquery{
   from{ width: 0; }
   to{ width: 20%; }
+}
+.root.inde{ animation: change_widht_indi 2s 0.5s forwards; }
+@keyframes change_widht_indi{
+  from{ width: 0; }
+  to{ width: 30%; }
 }
 
 
