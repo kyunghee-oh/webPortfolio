@@ -176,7 +176,7 @@
 .skill-intro .skill-img-m{ display: none; }
 /* //skill: 퍼블리싱, 디자인 */
 .skill-box{ padding-top: 100px; }
-.skill-box .design{ padding-bottom: 60px; }
+.skill-box .design{ margin-top: 60px; }
 .skill-box .publishing::after,
 .skill-box .design::after{
   content: "";
