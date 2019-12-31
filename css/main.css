@@ -35,7 +35,7 @@
   width: 100%;
   height: 100%;
 }
-.gnb .gnb_menu li a:hover{ color: #f35406; transition: color 0.3s ease; }
+.gnb .gnb_menu li a:hover{ color: #df4d05; transition: color 0.3s ease; }
 .nav-mbtn{ display: none; }
 .m-gnb{ display: none; }
 
@@ -79,7 +79,7 @@
 .article .intro p{
   margin-top: 60px;
   width: 95%;
-  color: #f35406;
+  color: #df4d05;
 }
 /* //포트폴리오 소개:슬라이드 */
 .slide-wrapper{
@@ -193,7 +193,7 @@
   line-height: 1.4em;
   color: #fffcfc;
 }
-.skill-box .txt-box p strong{ font-size: 60px; color: #657283; }
+.skill-box .txt-box p strong{ font-size: 60px; color: #748398; }
 .skill-box .txt-list li{ margin-bottom: 10px; color: #fffcfc; }
 .skill-box .chart{ width: 50%; }
 .skill-box .publishing .chart{ float: right; }
@@ -247,7 +247,7 @@
 
 /* footer */
 .copyright_portfolio{ position: absolute; top: 32.5px; }
-.copyright_portfolio p{ font-size: 16px; color: #657283; }
+.copyright_portfolio p{ font-size: 16px; color: #748398; }
 .footer_nav{ height: 100%; }
 .footer_nav ul{ text-align: right; height: 100%; }
 .footer_nav ul li{ display: inline-block; padding: 34px 0 34px 20px; }
